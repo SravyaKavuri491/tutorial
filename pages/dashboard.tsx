@@ -74,7 +74,7 @@ export default function Dashboard() {
       id: 3,
       name: 'Halloween Costume Party',
       description: 'Dress up and join the party!',
-      fullDescription: 'The highlight of the Halloween season! Join us for an unforgettable night of music, dancing, and costume competitions. Featuring live DJ, professional photographers, themed cocktails, and prizes for best costumes in multiple categories. Don\'t miss the midnight parade of costumes!',
+      fullDescription: 'The highlight of the Halloween season! Join us for an unforgettable night of music, dancing, and costume competitions. Featuring live DJ, professional photographers, themed cocktails, and prizes for best costumes in multiple categories. Don&apos;t miss the midnight parade of costumes!',
       date: '2023-10-30',
       time: '8:00 PM',
       location: '789 Costume Blvd',
@@ -293,7 +293,7 @@ export default function Dashboard() {
             <Text fontSize="lg" color="gray.200" lineHeight="tall">
               Welcome to the most spectacular Halloween celebration of the year! Our carefully curated events bring together 
               the perfect blend of spooky entertainment, creative activities, and thrilling experiences. Whether you're a 
-              thrill-seeker looking for scares in our Haunted House, an artist ready to create the perfect jack-o'-lantern, 
+              thrill-seeker looking for scares in our Haunted House, an artist ready to create the perfect jack-o&apos;-lantern, 
               or a party-goer excited to show off your costume, we have something for everyone.
             </Text>
           </Box>
