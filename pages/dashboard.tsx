@@ -292,7 +292,7 @@ export default function Dashboard() {
             </Heading>
             <Text fontSize="lg" color="gray.200" lineHeight="tall">
               Welcome to the most spectacular Halloween celebration of the year! Our carefully curated events bring together 
-              the perfect blend of spooky entertainment, creative activities, and thrilling experiences. Whether you're a 
+              the perfect blend of spooky entertainment, creative activities, and thrilling experiences. Whether you are a 
               thrill-seeker looking for scares in our Haunted House, an artist ready to create the perfect jack-o&apos;-lantern, 
               or a party-goer excited to show off your costume, we have something for everyone.
             </Text>
