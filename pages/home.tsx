@@ -133,8 +133,8 @@ const HomePage: React.FC = () => {
       <Container maxW="container.xl" py={20}>
         <VStack spacing={8} align="center" textAlign="center">
           {/* Coming Soon Text */}
-          <Heading as="h2" size="xl" fontFamily="'Creepster', cursive">
-            We are Coming Soon
+          <Heading as="h2" size="xl" fontFamily="&apos;Creepster&apos;, cursive">
+            We&apos;re Coming Soon
           </Heading>
 
           {/* Description */}
@@ -154,7 +154,7 @@ const HomePage: React.FC = () => {
               direction={{ base: 'column', md: 'row' }}
               gap={6}
               mt={8}
-              fontFamily="'Creepster', cursive"
+              fontFamily="&apos;Creepster&apos;, cursive"
             >
               <Box textAlign="center">
                 <Text fontSize="4xl" fontWeight="bold">
