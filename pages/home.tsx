@@ -39,7 +39,7 @@ const HomePage: React.FC = () => {
 
   useEffect(() => {
     if (registeredEvents.length > 0) {
-      const eventDate = new Date(registeredEvents[0].date).getTime(); // Use the first registered event's date
+      const eventDate = new Date(registeredEvents[0].date).getTime();
       const interval = setInterval(() => {
         const now = new Date().getTime();
         const distance = eventDate - now;
@@ -63,19 +63,17 @@ const HomePage: React.FC = () => {
   };
 
   const handleGhostCursor = () => {
-    document.body.style.cursor = "url('/ghost-cursor.png'), auto";
+    document.body.style.cursor = 'url(\'/ghost-cursor.png\'), auto';
   };
 
   const handleEventsClick = () => {
-    router.push('/events'); // Route to the events page
+    router.push('/events');
   };
 
-  // Handle mouse entering the top of the page
   const handleMouseEnter = () => {
     setIsTitleBarVisible(true);
   };
 
-  // Handle mouse leaving the top of the page
   const handleMouseLeave = () => {
     setIsTitleBarVisible(false);
   };
@@ -83,7 +81,7 @@ const HomePage: React.FC = () => {
   return (
     <Box
       minH="100vh"
-      bgImage="url('/images/wallpaper.jpg')" // Replace with your wallpaper image
+      bgImage={`url('/images/wallpaper.jpg')`}
       bgSize="cover"
       bgPosition="center"
       color={textColor}
@@ -104,8 +102,8 @@ const HomePage: React.FC = () => {
       >
         <Flex px={6} py={4} justify="space-between" align="center">
           <HStack spacing={2}>
-            <Home size={24} color="white" /> {/* Icon color set to white */}
-            <Text fontSize="xl" fontWeight="bold" color="white"> {/* Font color set to white */}
+            <Home size={24} color="white" />
+            <Text fontSize="xl" fontWeight="bold" color="white">
               Halloween Fest
             </Text>
           </HStack>
@@ -133,8 +131,8 @@ const HomePage: React.FC = () => {
       <Container maxW="container.xl" py={20}>
         <VStack spacing={8} align="center" textAlign="center">
           {/* Coming Soon Text */}
-          <Heading as="h2" size="xl" fontFamily="&apos;Creepster&apos;, cursive">
-            We&apos;re Coming Soon
+          <Heading as="h2" size="xl" fontFamily={`'Creepster', cursive`}>
+            {`We're Coming Soon`}
           </Heading>
 
           {/* Description */}
@@ -154,7 +152,7 @@ const HomePage: React.FC = () => {
               direction={{ base: 'column', md: 'row' }}
               gap={6}
               mt={8}
-              fontFamily="&apos;Creepster&apos;, cursive"
+              fontFamily={`'Creepster', cursive`}
             >
               <Box textAlign="center">
                 <Text fontSize="4xl" fontWeight="bold">
