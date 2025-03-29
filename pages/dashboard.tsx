@@ -74,7 +74,7 @@ export default function Dashboard() {
       id: 3,
       name: 'Halloween Costume Party',
       description: 'Dress up and join the party!',
-      fullDescription: 'The highlight of the Halloween season! Join us for an unforgettable night of music, dancing, and costume competitions. Featuring live DJ, professional photographers, themed cocktails, and prizes for best costumes in multiple categories. Don&apos;t miss the midnight parade of costumes!',
+      fullDescription: `The highlight of the Halloween season! Join us for an unforgettable night of music, dancing, and costume competitions. Featuring live DJ, professional photographers, themed cocktails, and prizes for best costumes in multiple categories. Don't miss the midnight parade of costumes!`,
       date: '2023-10-30',
       time: '8:00 PM',
       location: '789 Costume Blvd',
@@ -94,15 +94,15 @@ export default function Dashboard() {
   };
 
   const handleGhostCursor = () => {
-    document.body.style.cursor = "url('/ghost-cursor.png'), auto";
+    document.body.style.cursor = `url('/ghost-cursor.png'), auto`;
   };
 
   const handleHomeClick = () => {
-    router.push('/home'); // Route to the homepage
+    router.push('/home');
   };
 
   const handleEventsClick = () => {
-    router.push('/events'); // Route to the events page
+    router.push('/events');
   };
 
   const handleSubmitFeedback = async () => {
@@ -146,9 +146,8 @@ export default function Dashboard() {
       return;
     }
 
-    // Handle form submission (e.g., send data to backend)
     console.log({ name, email, userIssue });
-    onHelpDeskOpen(); // Show confirmation pop-up
+    onHelpDeskOpen();
     setName('');
     setEmail('');
     setUserIssue('');
@@ -277,7 +276,7 @@ export default function Dashboard() {
           mb={20}
           p={8}
           borderRadius="2xl"
-          bgImage="url('https://images.unsplash.com/photo-1604014237800-1c9102c219da?auto=format&fit=crop&w=1200')"
+          bgImage={`url('https://images.unsplash.com/photo-1604014237800-1c9102c219da?auto=format&fit=crop&w=1200')`}
           bgSize="cover"
           bgPosition="center"
         >
@@ -291,10 +290,10 @@ export default function Dashboard() {
               About Halloween Fest
             </Heading>
             <Text fontSize="lg" color="gray.200" lineHeight="tall">
-              Welcome to the most spectacular Halloween celebration of the year! Our carefully curated events bring together 
+              {`Welcome to the most spectacular Halloween celebration of the year! Our carefully curated events bring together 
               the perfect blend of spooky entertainment, creative activities, and thrilling experiences. Whether you are a 
-              thrill-seeker looking for scares in our Haunted House, an artist ready to create the perfect jack-o&apos;-lantern, 
-              or a party-goer excited to show off your costume, we have something for everyone.
+              thrill-seeker looking for scares in our Haunted House, an artist ready to create the perfect jack-o'-lantern, 
+              or a party-goer excited to show off your costume, we have something for everyone.`}
             </Text>
           </Box>
         </Box>
@@ -315,11 +314,10 @@ export default function Dashboard() {
             <Heading as="h2" size="xl" color="orange.400">Help Desk</Heading>
           </HStack>
           <Flex direction={{ base: 'column', md: 'row' }} gap={6}>
-            {/* Contact Information on the Left */}
             <Box flex="1">
               <Text fontSize="lg" color="gray.200" mb={6}>
-                If you are facing any issues or have questions, feel free to reach out to us. Our support team is available 
-                to assist you via email or phone. You can also fill out the form below, and we will get back to you within 24 hours.
+                {`If you are facing any issues or have questions, feel free to reach out to us. Our support team is available 
+                to assist you via email or phone. You can also fill out the form below, and we will get back to you within 24 hours.`}
               </Text>
               <Box bg="purple.950" bgOpacity={0.5} p={6} borderRadius="xl">
                 <Heading as="h3" size="md" mb={3}>Contact Information</Heading>
@@ -328,7 +326,6 @@ export default function Dashboard() {
               </Box>
             </Box>
 
-            {/* Form on the Right */}
             <Box flex="1">
               <VStack spacing={6} align="stretch">
                 <Input
@@ -348,7 +345,7 @@ export default function Dashboard() {
                   _placeholder={{ color: 'gray.400' }}
                 />
                 <Textarea
-                  placeholder="Describe the issue you're facing..."
+                  placeholder={`Describe the issue you're facing...`}
                   value={userIssue}
                   onChange={(e) => setUserIssue(e.target.value)}
                   bg="rgba(255, 255, 255, 0.1)"
