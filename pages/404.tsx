@@ -8,7 +8,9 @@ export default function ErrorPage() {
       alignItems="center"
       justifyContent="center"
       p={4}
-      bg="gray.100" // Simplified background instead of image
+      backgroundImage="url('/halloween.jpg')"
+      backgroundSize="cover"
+      backgroundPosition="center"
     >
       <Box 
         bg="white" 
@@ -19,11 +21,16 @@ export default function ErrorPage() {
         w="full"
         textAlign="center"
       >
-        <Heading as="h1" fontSize="2xl" mb={4} color="gray.800">
+        <Heading 
+          as="h1" 
+          fontSize="2xl" 
+          mb={4} 
+          color="gray.800"
+        >
           404 - Page Not Found
         </Heading>
         <Text color="gray.600">
-          Oops! The page you're looking for doesn't exist.
+          {`Oops! The page you're looking for doesn't exist.`}
         </Text>
       </Box>
     </Box>
