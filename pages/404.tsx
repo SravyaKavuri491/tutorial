@@ -26,6 +26,8 @@ export default function ErrorPage() {
           fontSize="2xl" 
           mb={4} 
           color="gray.800"
+          // Add this line to fix the type error
+          {...({} as React.ComponentProps<typeof Heading>)}
         >
           404 - Page Not Found
         </Heading>
