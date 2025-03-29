@@ -318,8 +318,8 @@ export default function Dashboard() {
             {/* Contact Information on the Left */}
             <Box flex="1">
               <Text fontSize="lg" color="gray.200" mb={6}>
-                If you're facing any issues or have questions, feel free to reach out to us. Our support team is available 
-                to assist you via email or phone. You can also fill out the form below, and we'll get back to you within 24 hours.
+                If you are facing any issues or have questions, feel free to reach out to us. Our support team is available 
+                to assist you via email or phone. You can also fill out the form below, and we will get back to you within 24 hours.
               </Text>
               <Box bg="purple.950" bgOpacity={0.5} p={6} borderRadius="xl">
                 <Heading as="h3" size="md" mb={3}>Contact Information</Heading>
