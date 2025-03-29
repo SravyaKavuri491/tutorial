@@ -134,7 +134,7 @@ const HomePage: React.FC = () => {
         <VStack spacing={8} align="center" textAlign="center">
           {/* Coming Soon Text */}
           <Heading as="h2" size="xl" fontFamily="'Creepster', cursive">
-            We're Coming Soon
+            We are Coming Soon
           </Heading>
 
           {/* Description */}
