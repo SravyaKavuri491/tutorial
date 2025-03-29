@@ -15,7 +15,7 @@ export default function ErrorPage() {
         <Heading as="h1" size="xl" mb={4}>
           404 - Page Not Found
         </Heading>
-        <Text>Oops! The page you're looking for doesn't exist.</Text>
+        <Text>Oops! The page you are looking for doesn&apos;t exist.</Text>
       </Box>
     </Box>
   );
